@@ -1,44 +1,39 @@
 <!-- Describe task in general -->
 
 <p>
-    You need to count the number of digits in a given string.
-</p>
-
-<!-- Explain input and output values -->
-<p>
-    <strong>Input: </strong> A Str.
+    On souhaite fusionner les chiffres deux entiers
 </p>
 
 <p>
-    <strong>Output: </strong> An Int. 
+    On vous propose deux entiers.
+    Pour cette tache, vous devez retourner un entier qui contient les chiffres des entiers passés en argument.
+    Pour ce faire vous devez décomposer les deux entiers (par divisions successives), puis composer le résultat en alternant les chiffres
+    des deux entiers.
+    Exemple:
+    pour 1234 et 8765  {1, 2, 3, 4} et {5, 6, 7, 8} sont les chiffes qui composent les entier donnés, le résultat sera donc
+    <b>18273645</>.
 </p>
 
-<!-- Give some usage examples -->
+
+<p><strong>Saisie: </strong>Un entier.</p>
+
+<p><strong>Sortie: </strong>Deux entiers.</p>
 <div class="for_info_only">
-    <p>
-        <strong>Example:</strong>
-    </p>
+    <p><strong>Exemple:</strong></p>
+<pre class="brush: python">
+fusion(20, 20) == 2200
+fusion(99,11) == 9191
+fusion(1234, 8765) == 18273645
+fusion(9, 0) == 90
 
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">countDigits('hi') == 0
-countDigits('who is 1st here') == 1
-countDigits('my numbers is 2') == 1
-countDigits('This picture is an oil on canvas '
- 'painting by Danish artist Anna '
- 'Petersen between 1845 and 1910 year') == 8
-countDigits('5 plus 6 is') == 2
-countDigits('') == 0
 </pre>
-{% else %}
-<pre class="brush: python">count_digits('hi') == 0
-count_digits('who is 1st here') == 1
-count_digits('my numbers is 2') == 1
-count_digits('This picture is an oil on canvas '
- 'painting by Danish artist Anna '
- 'Petersen between 1845 and 1910 year') == 8
-count_digits('5 plus 6 is') == 2
-count_digits('') == 0
-</pre>
-{% endif %}
 </div>
+<p>
+    <strong>Intérêt de la mission</strong>
+    Cette mission vous aidera à comprendre comment manipuler des entiers et comment utiliser un système de numération positionnel.
+</p>
 
+<p>
+    <strong>Précondition :<br></strong>
+    0 <= X<br> les deux nombres ont le même nombre de chiffres.
+</p>
